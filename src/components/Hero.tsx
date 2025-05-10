@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { CheckCircle, TrendingUp, Shield } from 'lucide-react';
 
@@ -58,7 +60,7 @@ const Hero: React.FC = () => {
             
             <div className="flex flex-col sm:flex-row gap-4">
               <button 
-                // onClick={()=>scrollToContact()}
+                onClick={scrollToContact}
                 className="inline-flex items-center bg-teal-primary text-white px-6 py-3 rounded-md text-lg font-medium hover:bg-teal-600 transition-all transform hover:-translate-y-1"
               >
                 🔍 Book a Free Audit Consultation

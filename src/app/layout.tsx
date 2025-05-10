@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
 import './globals.css';
-
 const poppins = Poppins({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700'],
@@ -11,6 +10,9 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: 'Audit Squad - Inventory Audit Specialists',
   description: 'Professional inventory auditing services to ensure your business maintains accurate stock records. Expert auditors, fast turnaround, and comprehensive reports.',
+  icons: {
+    icon: '/favicon.ico', // Ensure the path starts with a slash and is relative to the public directory
+  },
   keywords: 'inventory audit, stock verification, warehouse compliance, audit trail, inventory management, physical inventory, cycle counting',
   openGraph: {
     title: 'Audit Squad - Inventory Audit Specialists',
@@ -50,6 +52,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={poppins.className}>
+      <head>
+        <link rel="icon" href="/apple-touch-icon.png" />
+      </head>
       <body>
         <div id="root">{children}</div>
       </body>

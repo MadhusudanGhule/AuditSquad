@@ -16,6 +16,9 @@ import Footer from '@/components/Footer';
 export const metadata: Metadata = {
   title: 'Audit Squad - Home | Professional Inventory Auditing Services',
   description: 'Transform your inventory management with Audit Squad. Expert auditors, real-time verification, and comprehensive reporting for businesses of all sizes.',
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 export default function Home() {

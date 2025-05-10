@@ -120,7 +120,7 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Contact</h3>
             <p className="text-gray-400 mb-2">📞 Call Us: +91 98765 43210</p>
-            <p className="text-gray-400 mb-4">📧 Email: support@auditsquad.com</p>
+            <p className="text-gray-400 mb-4">📧 Email: support@auditsquad.in</p>
             <button
               onClick={() => scrollToSection('contact')}
               className="bg-teal-primary text-white px-4 py-2 rounded-md hover:bg-teal-600 transition-colors"
