@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --teal-primary: #2AB7CA;
+  --green-primary: #88C057;
+  --orange-primary: #F67280;
+  --yellow-primary: #F8B500;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-poppins), system-ui, -apple-system, sans-serif;
+}
