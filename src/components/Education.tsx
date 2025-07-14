@@ -49,7 +49,7 @@ const Education: React.FC = () => {
       answer: "It depends on your stock size, location(s), and system complexity — usually from 1 to 7 days."
     },
     {
-      question: "Is the audit remote or on-site?",
+      question: "Is the audit on-site?",
       answer: "We offer both depending on your needs and data availability."
     }
   ];
@@ -94,7 +94,7 @@ const Education: React.FC = () => {
         </div>
 
         {/* Case Study */}
-        <div className="bg-white p-8 rounded-lg shadow-md mb-16">
+        {/* <div className="bg-white p-8 rounded-lg shadow-md mb-16">
           <div className="flex items-start mb-6">
             <TrendingUp size={24} className="text-teal-primary mr-3" />
             <div>
@@ -124,7 +124,7 @@ const Education: React.FC = () => {
             <FileText size={20} className="mr-2" />
             Read full case study
           </button>
-        </div>
+        </div> */}
 
         {/* FAQs */}
         <div>

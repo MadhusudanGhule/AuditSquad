@@ -45,7 +45,7 @@ const About: React.FC = () => {
     },
     {
       icon: <Users size={32} className="text-green-primary" />,
-      value: "500+",
+      value: "20+",
       label: "Satisfied Clients"
     }
   ];

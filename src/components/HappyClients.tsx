@@ -4,28 +4,102 @@ import { Star } from 'lucide-react';
 const HappyClients: React.FC = () => {
   const clients = [
     {
-      logo: "https://images.pexels.com/photos/176837/pexels-photo-176837.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      name: "TechCorp Solutions"
+      logo: "/brandImages/Aurelia.png",
+      name: " AuditSquad client TechCorp Solutions"
     },
     {
-      logo: "https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      name: "Global Logistics"
+      logo: "/brandImages/Being Human.jpg",
+      name: " AuditSquad client Global Logistics"
     },
     {
-      logo: "https://images.pexels.com/photos/269077/pexels-photo-269077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      name: "Retail Masters"
+      logo: "/brandImages/Biba.jpg",
+      name: " AuditSquad client Biba"
     },
     {
-      logo: "https://images.pexels.com/photos/273214/pexels-photo-273214.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      name: "E-Commerce Pro"
-    }
+      logo: "/brandImages/damensch.jpg",
+      name: " AuditSquad client damensch"
+    },
+    {
+      logo: "/brandImages/Honda.png",
+      name: " AuditSquad client Homda"
+    },
+    {
+      logo: "/brandImages/Levis Logo.png",
+      name: " AuditSquad client Levis"
+    },
+    {
+      logo: "/brandImages/Mustard.jpg",
+      name: " AuditSquad client Mustard"
+    }, {
+      logo: "/brandImages/Nicobar.jpg",
+      name: " AuditSquad client Nicobar"
+    },
+    {
+      logo: "/brandImages/Nike Images.jpg",
+      name: " AuditSquad client Nike"
+    },
+    {
+      logo: "/brandImages/Peter England.jpg",
+      name: " AuditSquad client Peter England"
+    }, {
+      logo: "/brandImages/Rare Rabbit.png",
+      name: " AuditSquad client Rare Rabbit"
+    },
+    {
+      logo: "/brandImages/Rarerism.jpg",
+      name: " AuditSquad client Rarerism"
+    },
+    {
+      logo: "/brandImages/Shoe Tree Logo.jpeg",
+      name: " AuditSquad client Shoe Tree"
+    }, {
+      logo: "/brandImages/Skechers Logo.jpg",
+      name: " AuditSquad client Global Logistics"
+    },
+    {
+      logo: "/brandImages/Soch.jpg",
+      name: " AuditSquad client Soch"
+    },
+    {
+      logo: "/brandImages/Superkicks.png",
+      name: " AuditSquad client Superkicks"
+    }, {
+      logo: "/brandImages/Suzuki.png",
+      name: " AuditSquad client Suzuki"
+    },
+    {
+      logo: "/brandImages/TSF Logo.jpeg",
+      name: " AuditSquad client TSF"
+    },
+    {
+      logo: "/brandImages/Veg Non Veg.png",
+      name: " AuditSquad client Veg Non Veg"
+    }, {
+      logo: "/brandImages/W Brand.jpg",
+      name: " AuditSquad client W Brand"
+    },
+    {
+      logo: "/brandImages/Yamaha Service Dealers.jpg",
+      name: " AuditSquad client Yamaha Service Dealers"
+    },
+    // {
+    //   logo: "/brandImages/",
+    //   name: " AuditSquad client E-Commerce Pro"
+    // }, {
+    //   logo: "/brandImages/",
+    //   name: " AuditSquad client Global Logistics"
+    // },
+    //   logo: "/brandImages/",
+    //   name: " AuditSquad client Global Logistics"
+    // },
+
   ];
 
   const stats = [
-    { value: "500+", label: "Happy Clients" },
+    { value: "200+", label: "Happy Clients" },
     { value: "98%", label: "Client Retention" },
-    { value: "50M+", label: "Items Audited" },
-    { value: "25+", label: "Countries Served" }
+    { value: "10M+", label: "Items Audited" },
+    { value: "5+", label: "Countries Served" }
   ];
 
   return (
@@ -35,7 +109,7 @@ const HappyClients: React.FC = () => {
           <div className="inline-flex items-center bg-teal-primary/10 text-teal-primary px-4 py-2 rounded-full text-sm font-medium mb-4">
             Our Clients
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Trusted by Industry Leaders</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Clients we are experienced with</h2>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto">
             Join hundreds of satisfied clients who trust Audit Squad with their inventory management.
           </p>
@@ -43,14 +117,14 @@ const HappyClients: React.FC = () => {
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
           {clients.map((client, index) => (
-            <div 
+            <div
               key={index}
               className="flex items-center justify-center p-8 bg-gray-50 rounded-lg transition-all duration-300 hover:shadow-md"
             >
-              <img 
-                src={client.logo} 
+              <img
+                src={client.logo}
                 alt={client.name}
-                className="max-h-12 w-auto grayscale hover:grayscale-0 transition-all duration-300"
+                className="max-h-20 w-auto duration-300"
               />
             </div>
           ))}

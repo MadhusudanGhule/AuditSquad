@@ -4,28 +4,28 @@ import { Linkedin } from 'lucide-react';
 const Leadership: React.FC = () => {
   const leaders = [
     {
-      name: "Alex Sharma",
-      position: "Chief Executive Officer",
+      name: "Naresh Choudhary",
+      position: "Founder",
       image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      bio: "15+ years of inventory management expertise"
+      bio: "Former Operational Consultant with 7+ years of experience"
     },
     {
-      name: "Sarah Chen",
-      position: "Head of Audit Operations",
+      name: "Laik Khan",
+      position: "Founder",
       image: "https://images.pexels.com/photos/3796217/pexels-photo-3796217.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      bio: "Former Big 4 auditor with global experience"
+      bio: "Former Nike and Woodland Inventory Head for West region"
     },
     {
-      name: "Raj Patel",
-      position: "Technology Director",
+      name: "Ashish Patil",
+      position: "Founder",
       image: "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      bio: "Expert in ERP systems and automation"
+      bio: "Former auditor with 20+ Years of experience"
     },
     {
-      name: "Maria Rodriguez",
-      position: "Client Success Director",
+      name: "Yugandhar Choudhary",
+      position: "Founder",
       image: "https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      bio: "Dedicated to delivering exceptional results"
+      bio: "Zeal to Learn and Invest"
     }
   ];
 

@@ -34,7 +34,7 @@ export default function Home() {
         <CustomSolutions />
         <Leadership />
         <HappyClients />
-        <NetworkPartners />
+        {/* <NetworkPartners /> */}
         <Testimonials />
         <Contact />
       </main>

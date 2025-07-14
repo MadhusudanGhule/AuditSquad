@@ -15,7 +15,7 @@ const Process: React.FC = () => {
     },
     {
       icon: <ClipboardCheck size={24} className="text-green-primary" />,
-      title: "On-Site or Remote Audit",
+      title: "On-Site Audit",
       description: "Our team verifies your inventory using proven methodologies."
     },
     {

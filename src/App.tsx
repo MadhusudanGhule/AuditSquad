@@ -38,7 +38,7 @@ function App() {
         <CustomSolutions />
         <Leadership />
         <HappyClients />
-        <NetworkPartners />
+        {/* <NetworkPartners /> */}
         <Testimonials />
         <Contact />
       </main>

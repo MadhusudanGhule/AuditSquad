@@ -9,7 +9,6 @@ const Features: React.FC = () => {
     "Fast Turnaround Times",
     "Seasoned Auditors & Specialists",
     "Secure & Confidential Process",
-    "Inventory Audit Reports Tailored to Your ERP System"
   ];
 
   return (
@@ -54,10 +53,10 @@ const Features: React.FC = () => {
               </p>
               <div className="mt-3 flex items-center">
                 <div className="w-10 h-10 bg-teal-primary/20 rounded-full flex items-center justify-center text-teal-primary font-bold">
-                  AS
+                  NP
                 </div>
                 <div className="ml-3">
-                  <div className="font-medium">Alex Sharma</div>
+                  <div className="font-medium">Naresh Prattipaati</div>
                   <div className="text-sm text-gray-500">Chief Auditor, Audit Squad</div>
                 </div>
               </div>
