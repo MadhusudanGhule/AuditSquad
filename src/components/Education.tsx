@@ -6,24 +6,24 @@ import { BookOpen, CheckSquare, AlertTriangle, TrendingUp, FileText } from 'luci
 const Education: React.FC = () => {
   const auditTypes = [
     {
-      title: "Cycle Counting",
-      description: "Periodic verification of a portion of inventory to ensure ongoing accuracy."
+      title: "Stocktaking",
+      description: "Our meticulous stocktaking services guarantee a real-time, accurate snapshot of your inventory, enabling informed decision-making."
     },
     {
-      title: "Full Physical Inventory",
-      description: "Comprehensive stock check done annually or quarterly."
+      title: "Inventory Audits",
+      description: "We conduct thorough inventory audits to identify and rectify discrepancies, ensuring that your records align with the physical stock on hand."
     },
     {
-      title: "Spot Checks",
-      description: "Surprise audits on specific SKUs or product categories."
+      title: "Stock Management",
+      description: "Our comprehensive stock management solutions empower businesses to streamline processes, reduce waste, and enhance overall productivity."
     },
     {
-      title: "Third-Party Verification",
-      description: "Independent validation for compliance or investor due diligence."
+      title: "Assets Tagging",
+      description: "We employ advanced tagging techniques to label and track your assets efficiently, facilitating easy identification and management."
     },
     {
-      title: "Digital Audit Integration",
-      description: "Audit support for ERP, WMS, or POS systems like SAP, Oracle, Zoho, etc."
+      title: "Assets Verification",
+      description: "Our verification services ensure the integrity of your asset records, preventing losses and enhancing the security of your valuable assets."
     }
   ];
 
