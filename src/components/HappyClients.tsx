@@ -96,10 +96,10 @@ const HappyClients: React.FC = () => {
   ];
 
   const stats = [
-    { value: "200+", label: "Happy Clients" },
+    { value: "20+", label: "Happy Clients" },
     { value: "98%", label: "Client Retention" },
-    { value: "10M+", label: "Items Audited" },
-    { value: "5+", label: "Countries Served" }
+    { value: "1M+", label: "Items Audited" },
+    { value: "1+", label: "Countries Served" }
   ];
 
   return (

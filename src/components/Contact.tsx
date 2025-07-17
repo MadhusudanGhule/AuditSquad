@@ -8,6 +8,7 @@ const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
     name: '',
     company: '',
+    mobile:'',
     email: '',
     message: ''
   });
@@ -35,7 +36,7 @@ const Contact: React.FC = () => {
     
     if (!formData.name.trim()) newErrors.name = 'Name is required';
     if (!formData.company.trim()) newErrors.company = 'Company is required';
-    
+    if (!formData.mobile.trim()) newErrors.mobile = 'Phone number is required';
     if (!formData.email.trim()) {
       newErrors.email = 'Email is required';
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
@@ -64,6 +65,7 @@ const Contact: React.FC = () => {
         {
           name: formData.name,
           company: formData.company,
+          mobile:formData.mobile,
           email: formData.email,
           message: formData.message
         },
@@ -75,6 +77,7 @@ const Contact: React.FC = () => {
         setFormData({
           name: '',
           company: '',
+          mobile:'',
           email: '',
           message: ''
         });
@@ -142,7 +145,7 @@ const Contact: React.FC = () => {
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit}>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-5">
                       <div>
                         <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
                           Name
@@ -172,8 +175,22 @@ const Contact: React.FC = () => {
                         {errors.company && <p className="mt-1 text-sm text-red-500">{errors.company}</p>}
                       </div>
                     </div>
-                    
-                    <div className="mb-6">
+                    {/* mobile */}
+                    <div className="mb-5">
+                      <label htmlFor="mobile" className="block text-sm font-medium text-gray-700 mb-1">
+                        Phone number
+                      </label>
+                      <input
+                        type="mobile"
+                        id="mobile"
+                        name="mobile"
+                        value={formData.mobile}
+                        onChange={handleChange}
+                        className={`w-full px-4 py-2 border ${errors.mobile ? 'border-red-500' : 'border-gray-300'} rounded-md focus:outline-none focus:ring-2 focus:ring-teal-primary`}
+                      />
+                      {errors.mobile && <p className="mt-1 text-sm text-red-500">{errors.mobile}</p>}
+                    </div>
+                    <div className="mb-5">
                       <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
                         Email
                       </label>
@@ -188,14 +205,14 @@ const Contact: React.FC = () => {
                       {errors.email && <p className="mt-1 text-sm text-red-500">{errors.email}</p>}
                     </div>
                     
-                    <div className="mb-6">
+                    <div className="mb-5">
                       <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
                         Message
                       </label>
                       <textarea
                         id="message"
                         name="message"
-                        rows={4}
+                        rows={3}
                         value={formData.message}
                         onChange={handleChange}
                         className={`w-full px-4 py-2 border ${errors.message ? 'border-red-500' : 'border-gray-300'} rounded-md focus:outline-none focus:ring-2 focus:ring-teal-primary`}
