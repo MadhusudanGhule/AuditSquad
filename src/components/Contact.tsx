@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { Phone, Mail } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -49,12 +50,26 @@ const Contact: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
-    if (validate()) {
-      setIsSubmitting(true);
-      
-      // Simulate form submission
-      setTimeout(() => {
+
+    if (!validate()) {
+      alert('Please fill all required fields.');
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    emailjs.send(
+        'service_bjg8j24',       // e.g., service_xxxxxx
+        'template_fyim52y',      // e.g., template_yyyyyy
+        {
+          name: formData.name,
+          company: formData.company,
+          email: formData.email,
+          message: formData.message
+        },
+        'f21JzWKqA0T1U6dI1'        // e.g., user_xxxxxxxx
+      )
+      .then(() => {
         setIsSubmitting(false);
         setIsSubmitted(true);
         setFormData({
@@ -63,8 +78,12 @@ const Contact: React.FC = () => {
           email: '',
           message: ''
         });
-      }, 1500);
-    }
+      })
+      .catch((error) => {
+        setIsSubmitting(false);
+        console.error('EmailJS Error:', error);
+        alert('Failed to send message.');
+      });
   };
 
   return (
