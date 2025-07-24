@@ -1,36 +1,43 @@
-import type { Metadata } from 'next';
-import { Poppins } from 'next/font/google';
-import './globals.css';
+import type { Metadata } from "next";
+import { Poppins } from "next/font/google";
+import "./globals.css";
+import Script from "next/script";
 const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
-  display: 'swap',
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: 'Audit Squad - Inventory Audit Specialists',
-  description: 'Professional inventory auditing services to ensure your business maintains accurate stock records. Expert auditors, fast turnaround, and comprehensive reports.',
+  title: "Audit Squad - Inventory Audit Specialists",
+  description:
+    "Professional inventory auditing services to ensure your business maintains accurate stock records. Expert auditors, fast turnaround, and comprehensive reports.",
   icons: {
-    icon: '/favicon.ico', // Ensure the path starts with a slash and is relative to the public directory
+    icon: "/favicon.ico", // Ensure the path starts with a slash and is relative to the public directory
   },
-  keywords: 'inventory audit, stock verification, warehouse compliance, audit trail, inventory management, physical inventory, cycle counting',
+  keywords:
+    "inventory audit, stock verification, warehouse compliance, audit trail, inventory management, physical inventory, cycle counting",
   openGraph: {
-    title: 'Audit Squad - Inventory Audit Specialists',
-    description: 'Professional inventory auditing services to ensure your business maintains accurate stock records.',
+    title: "Audit Squad - Inventory Audit Specialists",
+    description:
+      "Professional inventory auditing services to ensure your business maintains accurate stock records.",
     images: [
       {
-        url: 'https://images.pexels.com/photos/7639360/pexels-photo-7639360.jpeg',
+        url: "https://images.pexels.com/photos/7639360/pexels-photo-7639360.jpeg",
         width: 1200,
         height: 630,
-        alt: 'Audit Squad - Professional Inventory Auditing',
+        alt: "Audit Squad - Professional Inventory Auditing",
       },
     ],
   },
   twitter: {
-    card: 'summary_large_image',
-    title: 'Audit Squad - Inventory Audit Specialists',
-    description: 'Professional inventory auditing services to ensure your business maintains accurate stock records.',
-    images: ['https://images.pexels.com/photos/7639360/pexels-photo-7639360.jpeg'],
+    card: "summary_large_image",
+    title: "Audit Squad - Inventory Audit Specialists",
+    description:
+      "Professional inventory auditing services to ensure your business maintains accurate stock records.",
+    images: [
+      "https://images.pexels.com/photos/7639360/pexels-photo-7639360.jpeg",
+    ],
   },
   robots: {
     index: true,
@@ -38,9 +45,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
 };
@@ -54,6 +61,18 @@ export default function RootLayout({
     <html lang="en" className={poppins.className}>
       <head>
         <link rel="icon" href="/apple-touch-icon.png" />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-0KFSC2FDDT"
+        ></script>
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-0KFSC2FDDT');
+        `}
+        </Script>
       </head>
       <body>
         <div id="root">{children}</div>
